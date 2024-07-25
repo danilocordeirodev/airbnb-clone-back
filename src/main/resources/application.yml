@@ -30,7 +30,7 @@ spring:
     change-log: classpath:db/changelog/master.xml
     default-schema: airbnb_clone
     enabled: true
-
+   # drop-first: true
   servlet:
     multipart:
       enabled: true
@@ -39,11 +39,11 @@ spring:
 server:
   port: 8080
 
-okta:
-  oauth2:
-    issuer: https://dev-whn17w13ppmpu5hq.us.auth0.com/
-    client-id: ${AUTH0_CLIENT_ID}
-    client-secret: ${AUTH0_CLIENT_SECRET}
+#okta:
+#  oauth2:
+#    issuer: https://dev-whn17w13ppmpu5hq.us.auth0.com/
+#    client-id: ${AUTH0_CLIENT_ID}
+#    client-secret: ${AUTH0_CLIENT_SECRET}
 
 application:
   auth0:
