@@ -6,7 +6,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EnableJpaRepositories({"br.manedwolf.airbnbclone.user.repository"})
+@EnableJpaRepositories({"br.manedwolf.airbnbclone.user.repository",
+        "br.manedwolf.airbnbclone.listing.repository"})
 @EnableTransactionManagement
 @EnableJpaAuditing
 public class DatabaseConfiguration {

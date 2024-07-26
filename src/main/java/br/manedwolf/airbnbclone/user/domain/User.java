@@ -2,6 +2,7 @@ package br.manedwolf.airbnbclone.user.domain;
 
 import br.manedwolf.airbnbclone.commons.domain.AbstractAuditingEntity;
 import jakarta.persistence.*;
+import org.hibernate.annotations.UuidGenerator;
 
 import java.util.HashSet;
 import java.util.Objects;
@@ -30,6 +31,7 @@ public class User extends AbstractAuditingEntity<Long> {
     @Column(name = "image_url")
     private String imageUrl;
 
+    @UuidGenerator
     @Column(name = "public_id", nullable = false)
     private UUID publicId;
 
